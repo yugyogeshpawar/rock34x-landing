@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
@@ -38,18 +37,19 @@ const SidebarNav = ({ pages, onClose }) => {
                   textTransform: 'uppercase',
                   marginBottom: 1,
                   display: 'block',
+                  color: 'black'
                 }}
               >
                 {item.title}
               </Typography>
               <Grid container spacing={1}>
                 {item.pages.map((p, i) => (
-                  <Grid item xs={6} key={i}>
+                  <Grid item xs={12} key={i}>
                     <Link
                       variant="body2"
                       component={'a'}
                       href={p.href}
-                      color={activeLink === p.href ? 'primary' : 'textPrimary'}
+                      color={activeLink === p.href ? 'primary' : 'black'}
                       underline={'none'}
                       sx={{
                         fontWeight: activeLink === p.href ? 600 : 400,
@@ -68,28 +68,7 @@ const SidebarNav = ({ pages, onClose }) => {
             </Box>
           ))}
         </Box>
-        <Box>
-          <Button
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="/docs-introduction"
-          >
-            Documentation
-          </Button>
-        </Box>
-        <Box marginTop={1}>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            component="a"
-            target="blank"
-            href="https://material-ui.com/store/items/webbee-landing-page/"
-          >
-            Purchase now
-          </Button>
-        </Box>
+       
       </Box>
     </Box>
   );

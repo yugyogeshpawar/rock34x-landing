@@ -1,36 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
-import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+// import { useTheme } from '@mui/material/styles';
+// import { colors } from '@mui/material';
+// import IconButton from '@mui/material/IconButton';
 import WebbeeLogo from 'svg/logos/Webbee';
-import paletteTypes from 'common/paletteTypes';
+// import paletteTypes from 'common/paletteTypes';
 
 const Topbar = ({
-  themeMode,
-  themeToggler,
-  setThemePalette,
+  // themeMode,
+  // themeToggler,
+  // setThemePalette,
   onSidebarOpen,
-  paletteType,
+  // paletteType,
 }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Box
       display={'flex'}
       justifyContent={'space-between'}
       alignItems={'center'}
       width={'100%'}
+      padding={'1.5rem'}
     >
       <Box display={'flex'} alignItems={'center'}>
-        <Box marginRight={{ xs: 1, sm: 2 }}>
-          <IconButton onClick={onSidebarOpen} aria-label="Menu">
-            <MenuIcon />
-          </IconButton>
-        </Box>
         <Box
           display={'flex'}
           alignItems="baseline"
@@ -45,7 +39,7 @@ const Topbar = ({
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>
-        <Box
+        {/* <Box
           display={'flex'}
           padding={1}
           borderRadius={8}
@@ -82,8 +76,8 @@ const Topbar = ({
               )}
             </Box>
           ))}
-        </Box>
-        <Box>
+        </Box> */}
+        {/* <Box>
           <IconButton
             onClick={() => themeToggler()}
             aria-label="Dark mode toggler"
@@ -123,34 +117,30 @@ const Topbar = ({
               </svg>
             )}
           </IconButton>
-        </Box>
+        </Box> */}
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
           <Box>
             <Link underline="none" component="a" href="/" color="textPrimary">
-              Home
+              Investor
             </Link>
           </Box>
           <Box marginX={2}>
             <Link
               underline="none"
               component="a"
-              href="/docs-introduction"
+              href="#"
               color="textPrimary"
             >
-              Documentation
+              Startup
             </Link>
           </Box>
-          <Box>
-            <Button
-              variant="contained"
-              color="primary"
-              component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/webbee-landing-page/"
-              size="large"
+          <Box marginX={2} onClick={onSidebarOpen} >
+            <Link
+              underline="none"
+              color="textPrimary"
             >
-              Purchase now
-            </Button>
+              Menus
+            </Link>
           </Box>
         </Box>
       </Box>

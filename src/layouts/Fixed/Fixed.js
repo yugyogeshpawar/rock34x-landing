@@ -39,7 +39,7 @@ const Fixed = ({
         }}
         elevation={0}
       >
-        <Container paddingY={{ xs: 1 / 2, sm: 1 }} maxWidth={{ md: '100%' }}>
+        <Container paddingY={{ xs: 1 / 2, sm: 1 }} maxWidth={{ md: '100%' }} >
           <Topbar
             onSidebarOpen={handleSidebarOpen}
             themeMode={themeMode}

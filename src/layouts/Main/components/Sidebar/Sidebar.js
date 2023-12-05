@@ -9,14 +9,14 @@ const Sidebar = (props) => {
 
   return (
     <Drawer
-      anchor="left"
+      anchor="right"
       onClose={() => onClose()}
       open={open}
       variant={variant}
       sx={{
         '& .MuiPaper-root': {
           width: '100%',
-          maxWidth: { xs: '100%', sm: 400 },
+          maxWidth: { xs: '100%', sm: 200 },
         },
       }}
     >
@@ -25,6 +25,7 @@ const Sidebar = (props) => {
         sx={{
           height: '100%',
           padding: 1,
+          background: '#fff',
         }}
       >
         <SidebarNav pages={pages} onClose={onClose} />

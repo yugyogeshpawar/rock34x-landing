@@ -16,7 +16,7 @@ const Sidebar = (props) => {
       sx={{
         '& .MuiPaper-root': {
           width: '100%',
-          maxWidth: 256,
+          maxWidth: 140,
           top: { xs: 0, md: 64 },
           height: { xs: '100%', md: 'calc(100% - 64px)' },
         },

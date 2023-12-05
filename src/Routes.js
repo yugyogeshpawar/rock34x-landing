@@ -71,7 +71,7 @@ const Routes = () => {
     <ReactRoutes>
       <Route
         exact
-        path="/"
+        path="/landing-page-template"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}
@@ -225,7 +225,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/page-services"
+        path="/"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}

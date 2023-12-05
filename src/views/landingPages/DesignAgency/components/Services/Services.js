@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import { colors } from '@mui/material';
-import Container from 'common/Container';
+
 
 const Services = ({ themeMode = 'light' }) => {
   const theme = useTheme();
@@ -51,31 +51,7 @@ const Services = ({ themeMode = 'light' }) => {
 
   return (
     <Box>
-      <Container paddingY={'0 !important'}>
-        <Box marginBottom={4}>
-          <Typography
-            sx={{
-              textTransform: 'uppercase',
-              fontWeight: 'medium',
-            }}
-            gutterBottom
-            color={'secondary'}
-          >
-            Services
-          </Typography>
-          <Box
-            component={Typography}
-            fontWeight={700}
-            variant={'h3'}
-            gutterBottom
-          >
-            High-impact design & development services
-          </Box>
-          <Typography variant={'h6'} component={'p'} color={'textSecondary'}>
-            We take you by hand on each step of the process
-          </Typography>
-        </Box>
-      </Container>
+    
       <Box>
         <Slider {...sliderOpts}>
           {[
