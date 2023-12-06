@@ -6,7 +6,33 @@ import Typography from '@mui/material/Typography';
 const SeenOn = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <Box
+    >
+      <Box marginBottom={4}>
+        <Box
+          component={Typography}
+          fontWeight={300}
+          variant={'h4'}
+          gutterBottom
+          align={'center'}
+          marginBottom={4}
+        >
+          Explore the best projects on ROCK34X
+        </Box>
+        <Typography
+          variant={'h6'}
+          component={'p'}
+          color={'textSecondary'}
+          align={'center'}
+          fontWeight={200}
+        >
+          Rock34X is a Web 3.0 investment infrastructure needed to help promote
+          investing in crypto accessible to a mainstream audience and their
+          distinct demands while staying compliant, fostering more inclusive
+          investment opportunities
+        </Typography>
+        <Box marginTop={3} display={'flex'} justifyContent={'center'}></Box>
+      </Box>
       <Typography
         sx={{
           textTransform: 'uppercase',
@@ -37,7 +63,7 @@ const SeenOn = () => {
               sx={{
                 filter:
                   theme.palette.mode === 'dark'
-                    ? 'brightness(0) invert(0.7)'
+                    ? 'brightness(0) invert(1)'
                     : 'none',
               }}
             />

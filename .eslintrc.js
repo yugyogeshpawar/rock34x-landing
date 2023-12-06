@@ -2,6 +2,7 @@
 
 /*eslint linebreak-style: ["error", "windows"]*/
 module.exports = {
+  /*eslint linebreak-style: ["error", "windows"]*/
   'env': {
     'browser': true,
     'es2021': true,
