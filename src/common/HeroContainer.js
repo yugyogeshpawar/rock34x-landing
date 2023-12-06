@@ -9,6 +9,7 @@ const HeroContainer = ({ children, ...rest }) => (
     margin={'0 auto'}
     paddingX={0}
     paddingY={0}
+    
     {...rest}
   >
     {children}
