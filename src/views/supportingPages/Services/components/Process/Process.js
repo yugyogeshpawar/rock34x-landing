@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { colors } from '@mui/material';
-
+  
 const Process = ({ themeMode = 'light' }) => {
   return (
     <Box>

@@ -75,7 +75,7 @@ const Main = ({
         <Divider />
       </main>
       <Container paddingY={4}>
-        <Footer_figma />
+        <Footer_figma/>
       </Container>
     </div>
   );
