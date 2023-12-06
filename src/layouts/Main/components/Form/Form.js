@@ -7,7 +7,6 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
 
 const validationSchema = yup.object({
   firstName: yup
@@ -62,143 +61,124 @@ const Form = () => {
   });
 
   return (
-    <Box>
-      <form onSubmit={formik.handleSubmit}>
-        <Box
-          component={Grid}
-          marginBottom={{ xs: 10, sm: 0 }}
-          container
-          spacing={4}
-        >
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us your name *
-            </Typography>
-            <TextField
-              label="First name"
-              variant="outlined"
-              name={'firstName'}
-              fullWidth
-              value={formik.values.firstName}
-              onChange={formik.handleChange}
-              error={
-                formik.touched.firstName && Boolean(formik.errors.firstName)
-              }
-              helperText={formik.touched.firstName && formik.errors.firstName}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us your name *
-            </Typography>
-            <TextField
-              label="Last name"
-              variant="outlined"
-              name={'lastName'}
-              fullWidth
-              value={formik.values.lastName}
-              onChange={formik.handleChange}
-              error={formik.touched.lastName && Boolean(formik.errors.lastName)}
-              helperText={formik.touched.lastName && formik.errors.lastName}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please enter your email address *
-            </Typography>
-            <TextField
-              label="Email"
-              variant="outlined"
-              name={'email'}
-              fullWidth
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              error={formik.touched.email && Boolean(formik.errors.email)}
-              helperText={formik.touched.email && formik.errors.email}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please enter your phone number (optional)
-            </Typography>
-            <TextField
-              label="Phone number"
-              variant="outlined"
-              name={'phone'}
-              fullWidth
-              value={formik.values.phone}
-              onChange={formik.handleChange}
-              error={formik.touched.phone && Boolean(formik.errors.phone)}
-              helperText={formik.touched.phone && formik.errors.phone}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us the budget
-            </Typography>
-            <TextField
-              select
-              label="Project budget"
-              variant="outlined"
-              name={'budget'}
-              fullWidth
-              value={formik.values.budget}
-              onChange={formik.handleChange}
-              error={formik.touched.budget && Boolean(formik.errors.budget)}
-              helperText={formik.touched.budget && formik.errors.budget}
-            >
-              {[
-                '< $20.000',
-                '$20.000 - $50.000',
-                '$50.000 - $100.000',
-                '> $100.000',
-              ].map((option) => (
-                <MenuItem key={option} value={option}>
-                  {option}
-                </MenuItem>
-              ))}
-            </TextField>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us about your project (optional)
-            </Typography>
-            <TextField
-              label="Message"
-              variant="outlined"
-              name={'message'}
-              fullWidth
-              multiline
-              rows={4}
-              value={formik.values.message}
-              onChange={formik.handleChange}
-              error={formik.touched.message && Boolean(formik.errors.message)}
-              helperText={formik.touched.message && formik.errors.message}
-            />
-          </Grid>
-          <Grid
-            item
+    <div>
+      <div className='flex flex-wrap justify-center mb-8'>
+        <div className='text-3xl md:text-4xl my-4'>Don't Know How to Get Started?</div>
+        <div className=''>Our team is ready to help.Schedule a call and we'll walk you through</div>
+        <div className=''>the process and answer any questions you may have.</div>
+      </div>
+
+      <Box>
+        <form onSubmit={formik.handleSubmit}>
+          <Box
+            component={Grid}
+            marginBottom={{ xs: 10, sm: 0 }}
             container
-            xs={12}
-            justifyContent={'center'}
-            alignItems={'center'}
-            flexDirection={'column'}
+            spacing={4}
           >
-            <Button size={'large'} variant={'contained'} type={'submit'}>
-              Send request
-            </Button>
-            <Typography
-              variant={'subtitle2'}
-              color={'textSecondary'}
-              sx={{ marginTop: 2 }}
-              align={'center'}
+            <Grid item xs={12} sm={6}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Please tell us your name *
+              </Typography>
+              <TextField
+                label="First name"
+                variant="outlined"
+                name={'firstName'}
+                fullWidth
+                value={formik.values.firstName}
+                onChange={formik.handleChange}
+                error={
+                  formik.touched.firstName && Boolean(formik.errors.firstName)
+                }
+                helperText={formik.touched.firstName && formik.errors.firstName}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Please tell us your name *
+              </Typography>
+              <TextField
+                label="Last name"
+                variant="outlined"
+                name={'lastName'}
+                fullWidth
+                value={formik.values.lastName}
+                onChange={formik.handleChange}
+                error={formik.touched.lastName && Boolean(formik.errors.lastName)}
+                helperText={formik.touched.lastName && formik.errors.lastName}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Please enter your email address *
+              </Typography>
+              <TextField
+                label="Email"
+                variant="outlined"
+                name={'email'}
+                fullWidth
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                error={formik.touched.email && Boolean(formik.errors.email)}
+                helperText={formik.touched.email && formik.errors.email}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Please enter your phone number (optional)
+              </Typography>
+              <TextField
+                label="Phone number"
+                variant="outlined"
+                name={'phone'}
+                fullWidth
+                value={formik.values.phone}
+                onChange={formik.handleChange}
+                error={formik.touched.phone && Boolean(formik.errors.phone)}
+                helperText={formik.touched.phone && formik.errors.phone}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Please tell us about your project (optional)
+              </Typography>
+              <TextField
+                label="Message"
+                variant="outlined"
+                name={'message'}
+                fullWidth
+                multiline
+                rows={4}
+                value={formik.values.message}
+                onChange={formik.handleChange}
+                error={formik.touched.message && Boolean(formik.errors.message)}
+                helperText={formik.touched.message && formik.errors.message}
+              />
+            </Grid>
+            <Grid
+              item
+              container
+              xs={12}
+              justifyContent={'center'}
+              alignItems={'center'}
+              flexDirection={'column'}
             >
-              We'll get back to you in 1-2 business days.
-            </Typography>
-          </Grid>
-        </Box>
-      </form>
-    </Box>
+              <Button size={'large'} variant={'contained'} type={'submit'}>
+                Get in touch
+              </Button>
+              <Typography
+                variant={'subtitle2'}
+                color={'textSecondary'}
+                sx={{ marginTop: 2 }}
+                align={'center'}
+              >
+                We'll get back to you in 1-2 business days.
+              </Typography>
+            </Grid>
+          </Box>
+        </form>
+      </Box>
+    </div>
   );
 };
 
