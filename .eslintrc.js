@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+
+/*eslint linebreak-style: ["error", "windows"]*/
 module.exports = {
   'env': {
     'browser': true,
@@ -27,7 +29,7 @@ module.exports = {
     ],
     'linebreak-style': [
       'error',
-      'unix',
+      'windows', //'unix'
     ],
     'quotes': [
       'error',
