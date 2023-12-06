@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
-import { Topbar, Sidebar, Footer2, DontKnow } from './components';
+import { Topbar, Sidebar, Footer2, Form } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';
 
@@ -74,8 +74,8 @@ const Main = ({
         {children}
         <Divider />
       </main>
-      <Container paddingY={4}>
-        <DontKnow />
+      <Container maxWidth={800}>
+        <Form />
       </Container>
       <Divider />
       <Container paddingY={4}>
