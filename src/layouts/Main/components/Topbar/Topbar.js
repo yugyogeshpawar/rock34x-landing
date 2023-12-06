@@ -22,7 +22,7 @@ const Topbar = ({
       justifyContent={'space-between'}
       alignItems={'center'}
       width={'100%'}
-      padding={'1.5rem'}
+      padding={'1.1rem'}
     >
       <Box display={'flex'} alignItems={'center'}>
         <Box

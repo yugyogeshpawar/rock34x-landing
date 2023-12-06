@@ -8,7 +8,7 @@ const Home = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
+      <Box bgcolor={theme.palette.alternate.main} position={'relative'} sx={{ marginTop: '56px !important'}}>
         <Container position="relative" zIndex={2}>
           <Hero />
         </Container>

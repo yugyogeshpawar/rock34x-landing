@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
@@ -31,7 +31,7 @@ const Main = ({
   setThemePalette,
   paletteType,
 }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [openSidebar, setOpenSidebar] = useState(false);
 
   const handleSidebarOpen = () => {
@@ -48,7 +48,7 @@ const Main = ({
         <AppBar
           position={'fixed'}
           sx={{
-            backgroundColor: theme.palette.background.paper,
+            backgroundColor: '#ffffff00',
           }}
           elevation={1}
         >
