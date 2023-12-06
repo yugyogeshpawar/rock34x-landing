@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 
 const HeroContainer = ({ children, ...rest }) => (
   <Box
-    maxWidth={{ sm: 720, md: 1236 }}
     width={'100%'}
     margin={'0 auto'}
     paddingX={0}
