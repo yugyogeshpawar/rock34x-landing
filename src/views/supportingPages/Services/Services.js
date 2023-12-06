@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
+import HeroContainer from 'common/HeroContainer';
 import {
   Contact,
   Hero,
@@ -21,9 +22,9 @@ const Services = ({ themeMode = 'light' }) => {
 
   return (
     <Box>
-      <Container>
+      <HeroContainer>
         <Hero />
-      </Container>
+      </HeroContainer>
       <Container>
         <WhatWeDo />
       </Container>
