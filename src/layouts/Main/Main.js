@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
-import { Topbar, Sidebar, Footer } from './components';
+import { Topbar, Sidebar, Footer_figma } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';
 
@@ -75,7 +75,7 @@ const Main = ({
         <Divider />
       </main>
       <Container paddingY={4}>
-        <Footer />
+        <Footer_figma />
       </Container>
     </div>
   );
