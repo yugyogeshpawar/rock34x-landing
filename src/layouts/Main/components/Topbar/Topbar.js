@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 // import { useTheme } from '@mui/material/styles';
 // import { colors } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
+// import IconButton from '@mui/material/IconButton';
 import WebbeeLogo from 'svg/logos/Webbee';
 // import paletteTypes from 'common/paletteTypes';
 
 const Topbar = ({
-  themeMode,
-  themeToggler,
+  // themeMode,
+  // themeToggler,
   // setThemePalette,
   onSidebarOpen,
   // paletteType,
@@ -22,7 +22,7 @@ const Topbar = ({
       justifyContent={'space-between'}
       alignItems={'center'}
       width={'100%'}
-      padding={'1.5rem'}
+      padding={'1.1rem'}
     >
       <Box display={'flex'} alignItems={'center'}>
         <Box
@@ -77,7 +77,7 @@ const Topbar = ({
             </Box>
           ))}
         </Box> */}
-        <Box>
+        {/* <Box>
           <IconButton
             onClick={() => themeToggler()}
             aria-label="Dark mode toggler"
@@ -117,10 +117,10 @@ const Topbar = ({
               </svg>
             )}
           </IconButton>
-        </Box>
+        </Box> */}
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
           <Box>
-            <Link underline="none" component="a" href="/" color="textPrimary">
+            <Link underline="none" component="a" href="/" color="white">
               Investor
             </Link>
           </Box>
@@ -129,7 +129,7 @@ const Topbar = ({
               underline="none"
               component="a"
               href="#"
-              color="textPrimary"
+              color="white"
             >
               Startup
             </Link>
@@ -137,7 +137,7 @@ const Topbar = ({
           <Box marginX={2} onClick={onSidebarOpen} >
             <Link
               underline="none"
-              color="textPrimary"
+              color="white"
             >
               Menus
             </Link>

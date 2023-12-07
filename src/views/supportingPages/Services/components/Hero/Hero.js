@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 
 const Hero = () => {
   return (
-    <Box position="relative" overflow="hidden"> {/* Add overflow: hidden */}
+    <Box position="relative" overflow="hidden" marginTop="-64px"> {/* Add overflow: hidden */}
       <Box
         display={'flex'}
         height={'100vh'} // Adjust the height as needed
