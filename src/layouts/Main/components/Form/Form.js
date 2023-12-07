@@ -64,20 +64,36 @@ const Form = () => {
     <div>
       <Box marginBottom={4}>
         <Typography
-          variant="h4"
-          align={'center'}
+          align="center"
           gutterBottom
           sx={{
+            fontFamily: 'Raleway',
+            fontStyle: 'normal',
             fontWeight: 700,
+            fontSize: '60px',
+            lineHeight: '70px',
+            textAlign: 'center',
+            color: '#000000',
+            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
           }}
         >
-        Don’t Know How to Get Started?
+          Don’t Know How to Get Started?
         </Typography>
         <Typography
-          variant="h6"
-          align={'center'}
-          color={'textSecondary'}
-        >Our team is ready to help. Schedule a call and we'll walk you through <br/> the process and answer any questions you may have.
+          align="center"
+          color="textSecondary"
+          sx={{
+            fontFamily: 'Raleway',
+            fontStyle: 'italic',
+            fontWeight: 400,
+            fontSize: '22px',
+            lineHeight: '170%',
+            textAlign: 'center',
+            color: '#000000',
+          }}
+        >
+          Our team is ready to help. Schedule a call and we'll walk you through
+          <br /> the process and answer any questions you may have.
         </Typography>
       </Box>
       <Box>
@@ -116,7 +132,9 @@ const Form = () => {
                 fullWidth
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
-                error={formik.touched.lastName && Boolean(formik.errors.lastName)}
+                error={
+                  formik.touched.lastName && Boolean(formik.errors.lastName)
+                }
                 helperText={formik.touched.lastName && formik.errors.lastName}
               />
             </Grid>
@@ -175,17 +193,20 @@ const Form = () => {
               alignItems={'center'}
               flexDirection={'column'}
             >
-              <Button size={'large'} variant={'contained'} type={'submit'}>
+              <Button
+                size="large"
+                variant="contained"
+                type="submit"
+                sx={{
+                  borderRadius: 0, // Set border radius to 0 for no curved edges
+                  width: '200px', // Adjust width as needed
+                  backgroundImage:
+                    'linear-gradient(180deg, #D20000 0%, #000 268.49%)', // Red to dark red gradient
+                  color: '#FFFFFF'
+                }}
+              >
                 Get in touch
               </Button>
-              <Typography
-                variant={'subtitle2'}
-                color={'textSecondary'}
-                sx={{ marginTop: 2 }}
-                align={'center'}
-              >
-                We'll get back to you in 1-2 business days.
-              </Typography>
             </Grid>
           </Box>
         </form>

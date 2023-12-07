@@ -33,6 +33,7 @@ const WhatWeDo = () => {
             lineHeight: '69px',
             textAlign: 'center',
             color: '#000000',
+            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
           }}
           gutterBottom
           align={'center'}
@@ -63,6 +64,7 @@ const WhatWeDo = () => {
             lineHeight: '46px',
             textAlign: 'center',
             color: '#000000',
+            textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
           }}
           gutterBottom
           marginBottom={4}
