@@ -225,7 +225,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/"
+        path="landing/"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}
@@ -298,7 +298,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/page-coming-soon"
+        path="/"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}

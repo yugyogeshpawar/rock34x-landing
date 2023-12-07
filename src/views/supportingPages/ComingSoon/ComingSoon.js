@@ -88,7 +88,7 @@ const ComingSoon = () => {
                 We'll be here soon with our new awesome site, subscribe to be
                 notified.
               </Typography>
-              <Box
+              {/* <Box
                 display="flex"
                 flexDirection={'row'}
                 justifyContent={'space-around'}
@@ -150,8 +150,8 @@ const ComingSoon = () => {
                   </Typography>
                   <Typography>Secs</Typography>
                 </Box>
-              </Box>
-              <form noValidate autoComplete="off">
+              </Box> */}
+              <form noValidate autoComplete="off" style={{ marginTop:'30px' }}>
                 <Box
                   display="flex"
                   flexDirection={{ xs: 'column', sm: 'row' }}

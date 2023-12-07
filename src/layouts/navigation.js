@@ -1,19 +1,27 @@
 export const pages = [
   {
-    title: 'Landing Pages',
+    title: 'Menus',
     id: 'landing-pages',
     pages: [
       {
-        title: 'Advertisement',
-        href: '/landing-advertisement',
+        title: 'About',
+        href: '/#',
       },
       {
-        title: 'Payment App',
-        href: '/landing-payment-app',
+        title: 'Wallet',
+        href: '/#',
       },
       {
-        title: 'Marketing',
-        href: '/landing-marketing',
+        title: 'Projects',
+        href: '/#',
+      },
+      {
+        title: 'Contacts',
+        href: '/#',
+      },
+      {
+        title: 'Sign In',
+        href: '/#',
       },
     ],
   },

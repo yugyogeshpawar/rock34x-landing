@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
-import { Topbar, Sidebar, Footer2, Form, FAQ, Roadmap } from './components';
+import { Topbar, Sidebar, Footer2 } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';
 
@@ -72,7 +72,7 @@ const Main = ({
         {children}
         <Divider />
       </main>
-      <Container maxWidth={800}>
+      {/* <Container maxWidth={800}>
         <Roadmap />
       </Container>
       <Container maxWidth={800}>
@@ -81,10 +81,10 @@ const Main = ({
       <Container maxWidth={800}>
         <Form />
       </Container>
-      <Divider />
+      <Divider />*/}
       <Container paddingY={4}>
         <Footer2 />
-      </Container>
+      </Container> 
     </div>
   );
 };

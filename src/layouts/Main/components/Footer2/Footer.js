@@ -14,7 +14,7 @@ function Footer2() {
         <InstagramIcon/>
         <LinkedInIcon/>
       </div>
-      <div className='my-2 text-xs md:text-base'>Copyright @ 2023 ROCK34X. All rights reserved.</div>
+      <div className='mb-2 mt-4 text-xs md:text-base'>Copyright @ 2023 ROCK34X. All rights reserved.</div>
     </div>
   );
 }
