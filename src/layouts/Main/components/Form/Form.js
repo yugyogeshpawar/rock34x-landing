@@ -62,12 +62,24 @@ const Form = () => {
 
   return (
     <div>
-      <div className='flex flex-wrap justify-center mb-8'>
-        <div className='text-3xl md:text-4xl my-4'>Don't Know How to Get Started?</div>
-        <div className=''>Our team is ready to help.Schedule a call and we'll walk you through</div>
-        <div className=''>the process and answer any questions you may have.</div>
-      </div>
-
+      <Box marginBottom={4}>
+        <Typography
+          variant="h4"
+          align={'center'}
+          gutterBottom
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+        Don’t Know How to Get Started?
+        </Typography>
+        <Typography
+          variant="h6"
+          align={'center'}
+          color={'textSecondary'}
+        >Our team is ready to help. Schedule a call and we'll walk you through <br/> the process and answer any questions you may have.
+        </Typography>
+      </Box>
       <Box>
         <form onSubmit={formik.handleSubmit}>
           <Box
