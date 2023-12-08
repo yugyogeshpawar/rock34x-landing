@@ -9,7 +9,7 @@ import AOS from 'aos';
 
 export const useDarkMode = () => {
   const [themeMode, setTheme] = useState('light');
-  const [paletteType, setPalette] = useState(palettes[0]);
+  const [paletteType, setPalette] = useState(palettes[4]);
   const [mountedComponent, setMountedComponent] = useState(false);
 
   const setMode = (mode) => {
@@ -17,8 +17,8 @@ export const useDarkMode = () => {
     setTheme(mode);
   };
 
-  const setThemePalette = (type = 'green') => {
-    const palette = palettes.indexOf(type) === -1 ? 'green' : type;
+  const setThemePalette = (type = 'pink') => {
+    const palette = palettes.indexOf(type) === -1 ? 'pink' : type;
     window.localStorage.setItem('themePalette', palette);
     setPalette(palette);
   };
@@ -31,7 +31,7 @@ export const useDarkMode = () => {
     const localTheme = window.localStorage.getItem('themeMode');
     localTheme ? setTheme(localTheme) : setMode('light');
     const localPalette = window.localStorage.getItem('themePalette');
-    localPalette ? setPalette(localPalette) : setThemePalette('green');
+    localPalette ? setPalette(localPalette) : setThemePalette('pink');
     setMountedComponent(true);
   }, []);
 

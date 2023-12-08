@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 // import { useTheme } from '@mui/material/styles';
 // import { colors } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
@@ -12,7 +12,7 @@ const Topbar = ({
   themeMode,
   themeToggler,
   // setThemePalette,
-  onSidebarOpen,
+  // onSidebarOpen,
   // paletteType,
 }) => {
   // const theme = useTheme();
@@ -118,9 +118,9 @@ const Topbar = ({
             )}
           </IconButton>
         </Box>
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
+        {/* <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
           <Box>
-            <Link underline="none" component="a" href="/" color="textPrimary">
+            <Link underline="none" component="a" href="/" color="textPrimary" >
               Investor
             </Link>
           </Box>
@@ -142,7 +142,7 @@ const Topbar = ({
               Menus
             </Link>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
